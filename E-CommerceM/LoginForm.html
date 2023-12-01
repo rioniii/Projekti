@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <div class="formular">
+        <h1>Formular per regjistrim</h1>
+    
+        <form>
+            <ul>
+         <li><label>Emri dhe Mbiemri:</label></li>
+        <li><input type="text"id="emri" name="emri" required></li>
+        <li><label>Gjinia:</label></li>
+        <li><input type="text" id="gjinia" name="gjinia" required></li>
+        <li><label>Email-Adresa:</label></li>
+        <li><input type="text" id="email" name="email"required></li>
+        <li><label>Fjalekalimi:</label></li>
+        <li><input type="password" id="fjalekalimi" name="fjalekalimi" required></li>
+        <li><label>Konfirmim i fjalekalimit:</label></li>
+        <li> <input type="password" id="confirmpassword" name="confirmpassword"required></li>
+        <li><input type="submit" value="submit"></li>
+        
+        </ul>
+        </form>
+<script>
+
+let emri = document.getElementById("emri").value;
+let gjinia = document.getElementById("gjinia").value;
+let fjalekalimi = document.getElementById("fjalekalimi").value;
+let email = document.getElementById("email").value;
+let confirmpassword = document.getElementById("confirmpassword").value;
+
+
+let emriRegex =/^[a-zA-Z\s]+$/;
+if(!emriRegex.test(emri)){
+    alert("Please enter a valide name!");
+    return false;
+}
+
+let fjalekalimiRegex =/^[a-zA-Z\s]+$/;
+if(!fjalekalimiRegex.test(fjalekalimi)){
+alert("Please enter a valid password");
+return false;
+}
+let emailRegex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+if(!emailRegex.test(email)){
+    alert("Please enter a valide email!");
+    return false;
+}
+if(!password===confirmpassword){
+    alert("Please rechek confrim password is not the same!");
+    return false;
+}
+</script>
+
+
+</body>
+</html>
