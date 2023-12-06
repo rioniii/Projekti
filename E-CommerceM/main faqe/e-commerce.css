@@ -122,8 +122,6 @@ margin-bottom: 5%;
 .footer{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 .rrjeta{
     display: flex;
@@ -145,5 +143,4 @@ margin-bottom: 5%;
     }
     
 }
-
 
