@@ -33,5 +33,7 @@
     justify-content: center;
 }
 body{
-    background-color: green;
+    background-color: rgb(238, 247, 238);
+     flex-wrap: nowrap; 
 }
+

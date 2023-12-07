@@ -1,6 +1,7 @@
 
 body{
-    background-color: rgb(110, 212, 110);
+    background-color: rgb(238, 247, 238);
+    flex-wrap: nowrap;
 }
 
 .main{
@@ -13,13 +14,6 @@ body{
 .logo{
     width: 100%;
     display: flex;
-    /* border-radius: 6px;
-    
-   
-    border: 1px solid black; */
-   
-    
-    
 }
 .search{
     width: 100%;
@@ -28,8 +22,6 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     justify-content: flex-end;
- 
-
 }
 .logo1{
     margin-left: 15px;
@@ -59,6 +51,7 @@ width: 100%;
 }
 .a0{
     text-decoration: none;
+    gap: 20px;
 }
 .Iphone{
     display: flex;
@@ -70,9 +63,6 @@ width: 100%;
     justify-content: space-evenly;
     
 }
-
-
-
 .samsung{
     margin-top: 2%;
     margin-bottom: 2%;
@@ -127,6 +117,10 @@ margin-bottom: 5%;
     display: flex;
     gap: 30px;
     align-items: center;
+    width: 50%;
+    height: 50%;
+    /* scale transform (1,1); */
+    text-align: center;
 }
 .end{
     display: flex;
@@ -136,11 +130,92 @@ margin-bottom: 5%;
 
 }
 
-@media screen( max-width 600px) {
-    .a0{
+@media only screen and ( max-width: 100px) {
+    .main{
         flex-direction:column;
-        flexwrap;wrap;
+       flex-wrap: nowrap;
+       background-color: rgb(250, 240, 250);
+text-transform: capitalize;
     }
     
 }
 
+.a1{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    transition: steps(1,1);/*Spodi ala so tu bo diqka*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a2{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a3{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a4{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a5{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s1{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s2{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s3{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s4{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s5{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo3{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
