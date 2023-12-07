@@ -135,7 +135,7 @@ margin-bottom: 5%;
         flex-direction:column;
        flex-wrap: nowrap;
        background-color: rgb(250, 240, 250);
-text-transform: capitalize;
+       text-transform: capitalize;
     }
     
 }
