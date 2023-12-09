@@ -50,7 +50,7 @@ width: 100%;
 
 }
 .d2{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
@@ -138,12 +138,13 @@ margin-bottom: 5%;
 
 }
 
-@media screen( max-width 600px) {
-    .a0{
+@media only screen and ( max-width: 100px) {
+    .main{
         flex-direction:column;
-        flexwrap;wrap;
+       flex-wrap: nowrap;
+       background-color: rgb(250, 240, 250);
+       text-transform: capitalize;
     }
     
 }
-
 
